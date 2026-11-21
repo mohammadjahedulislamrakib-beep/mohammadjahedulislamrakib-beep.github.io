@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohammad Jahedul Islam Rakib | Portfolio</title>
+<meta name="description" content="LLB (Honours) student and Bangladesh Red Crescent Society volunteer. Humanitarian, climate-related and public-interest legal work.">
+<style>
+:root{--navy:#14284b;--navy2:#1e3a6e;--gold:#c9a24b;--bg:#f6f8fc;--text:#1c2434;--muted:#667085;--line:#e3e8f1;}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65;}
+.hero{background:linear-gradient(135deg,var(--navy),var(--navy2));color:#fff;padding:56px 20px 64px;text-align:center;}
+.hero img{width:150px;height:150px;border-radius:50%;object-fit:cover;object-position:top;border:4px solid var(--gold);box-shadow:0 8px 24px rgba(0,0,0,.35);margin-bottom:18px;}
+.hero h1{font-size:2rem;letter-spacing:.01em;margin-bottom:8px;}
+.hero .tag{max-width:600px;margin:0 auto 10px;opacity:.92;}
+.hero .loc{font-size:.92rem;opacity:.75;margin-bottom:20px;}
+.icons{display:flex;justify-content:center;gap:14px;}
+.icons a{width:48px;height:48px;border-radius:50%;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);display:flex;align-items:center;justify-content:center;transition:.2s;}
+.icons a:hover{background:var(--gold);transform:translateY(-3px);}
+.icons svg{width:22px;height:22px;fill:#fff;}
+nav{background:#fff;position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 20px;padding:12px 10px;box-shadow:0 2px 10px rgba(20,40,75,.08);}
+nav a{color:var(--navy);text-decoration:none;font-size:.9rem;font-weight:600;padding:4px 2px;border-bottom:2px solid transparent;}
+nav a:hover{border-color:var(--gold);}
+main{max-width:880px;margin:0 auto;padding:0 18px 40px;}
+section{padding-top:42px;}
+h2{color:var(--navy);font-size:1.25rem;text-transform:uppercase;letter-spacing:.08em;margin-bottom:18px;display:flex;align-items:center;gap:12px;}
+h2::after{content:"";flex:1;height:2px;background:linear-gradient(90deg,var(--gold),transparent);}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin-top:20px;}
+.stat{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center;box-shadow:0 2px 8px rgba(20,40,75,.05);}
+.stat b{display:block;font-size:1.6rem;color:var(--navy);}
+.stat span{font-size:.82rem;color:var(--muted);}
+.org{font-weight:700;font-size:1.1rem;color:var(--navy);}
+.sub{color:var(--muted);font-size:.93rem;margin-bottom:14px;}
+.exp{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:12px;box-shadow:0 2px 8px rgba(20,40,75,.05);overflow:hidden;}
+.exp summary{list-style:none;cursor:pointer;padding:16px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px;}
+.exp summary::-webkit-details-marker{display:none;}
+.exp summary .t strong{display:block;font-size:1.02rem;color:var(--text);}
+.exp summary .t small{color:var(--muted);font-size:.86rem;}
+.exp summary::after{content:"+";font-size:1.5rem;color:var(--gold);font-weight:700;transition:.2s;}
+.exp[open] summary::after{content:"\2212";}
+.exp[open] summary{border-bottom:1px solid var(--line);background:#fbfcfe;}
+.exp .body{padding:14px 20px 18px;}
+.exp ul{margin-left:18px;}
+.exp li{margin-bottom:8px;}
+.pill{display:inline-block;background:#eef2fa;color:var(--navy);font-size:.8rem;font-weight:600;padding:3px 10px;border-radius:20px;margin:8px 6px 0 0;}
+.edu{background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:10px;padding:14px 18px;margin-bottom:12px;}
+.edu .row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:4px;}
+.edu strong{color:var(--navy);}
+.edu .d{color:var(--muted);font-size:.9rem;}
+.edu p{color:var(--muted);font-size:.92rem;}
+ul.plain{margin-left:20px;}
+ul.plain li{margin-bottom:8px;}
+.skill{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin-bottom:10px;}
+.skill b{color:var(--navy);}
+.contact p{margin-bottom:14px;}
+.contact .btn{display:inline-flex;align-items:center;gap:10px;background:var(--navy);color:#fff;text-decoration:none;padding:11px 20px;border-radius:10px;margin:4px 10px 4px 0;font-weight:600;transition:.2s;}
+.contact .btn:hover{background:var(--gold);color:var(--navy);}
+.contact .btn svg{width:18px;height:18px;fill:currentColor;}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:22px;border-top:1px solid var(--line);background:#fff;}
+@media(max-width:480px){.hero h1{font-size:1.55rem;}.hero img{width:125px;height:125px;}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <img src="photo.png" alt="Mohammad Jahedul Islam Rakib">
+  <h1>Mohammad Jahedul Islam Rakib</h1>
+  <p class="tag">LLB (Honours) student and Red Crescent volunteer, building a path in humanitarian, climate-related and public-interest legal work.</p>
+  <p class="loc">Cox's Bazar, Bangladesh</p>
+  <div class="icons">
+    <a href="mailto:mohammadjahedulislamrakib@gmail.com" aria-label="Email" title="Email">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg>
+    </a>
+    <a href="https://linkedin.com/in/mohammadjahedulislamrakib" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.78 2.66 4.78 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z"/></svg>
+    </a>
+  </div>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#education">Education</a>
+  <a href="#training">Training</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I am an LLB (Honours) student at Port City International University with over five years of volunteer experience in the Bangladesh Red Crescent Society. My work covers flood response, team coordination, media and communication, data collection, first aid and disaster preparedness training, and leading youth sessions in schools and madrasas. I am looking to grow in humanitarian, climate-related and public-interest legal work.</p>
+  <div class="stats">
+    <div class="stat"><b>5+</b><span>Years volunteering</span></div>
+    <div class="stat"><b>1,500</b><span>Flood-affected people recorded</span></div>
+    <div class="stat"><b>~300</b><span>CPP volunteers trained</span></div>
+    <div class="stat"><b>150+</b><span>Students trained</span></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Volunteer Experience</h2>
+  <p class="org">Bangladesh Red Crescent Society (BDRCS)</p>
+  <p class="sub">Cox's Bazar Unit &middot; Pekua Upazila Team &mdash; tap a role to see details</p>
+
+  <details class="exp" open>
+    <summary><div class="t"><strong>ICT, Media &amp; Communication Head</strong><small>July 2024 &ndash; Present</small></div></summary>
+    <div class="body">
+      <ul>
+        <li>Manage information, media and communication work for the unit, and coordinate reporting between local teams and the central level.</li>
+        <li>Lead the media team and document field activities, training programs and disaster response, which is sent to the Cox's Bazar district unit for reporting and public awareness.</li>
+        <li>After the flood, prepared a database of around 1,500 flood-affected people; nearly all of them were subsequently provided with relief assistance.</li>
+        <li>Provide information support during training programs, events and emergency services.</li>
+      </ul>
+      <span class="pill">Media</span><span class="pill">Documentation</span><span class="pill">Data collection</span><span class="pill">Reporting</span>
+    </div>
+  </details>
+
+  <details class="exp">
+    <summary><div class="t"><strong>Volunteer</strong><small>March 2021 &ndash; Present</small></div></summary>
+    <div class="body">
+      <ul>
+        <li>Took part in flood response in the local area, including team management and support for affected families.</li>
+        <li>Responsible for shelter and food arrangements for participants at a 3-day divisional Red Crescent camp.</li>
+        <li>Ran awareness activities on health, hygiene and epidemic prevention in rural and urban areas.</li>
+      </ul>
+      <span class="pill">Flood response</span><span class="pill">Team management</span><span class="pill">Community outreach</span>
+    </div>
+  </details>
+
+  <details class="exp">
+    <summary><div class="t"><strong>Trainer, School and College Programme</strong><small>Pekua Upazila &middot; co-curricular activities</small></div></summary>
+    <div class="body">
+      <ul>
+        <li>Delivered Red Crescent basics and first aid training at three schools and two colleges in Pekua Upazila.</li>
+        <li>Trained around 30 to 35 students in each institution, reaching more than 150 students in total.</li>
+        <li>Taught high school students at the schools and college students at the colleges.</li>
+      </ul>
+      <span class="pill">First aid</span><span class="pill">Training</span><span class="pill">Youth engagement</span>
+    </div>
+  </details>
+
+  <details class="exp">
+    <summary><div class="t"><strong>First Aid Trainer, Cyclone Preparedness Programme (CPP)</strong><small>Pekua Upazila</small></div></summary>
+    <div class="body">
+      <ul>
+        <li>Contributed to upazila-level first aid and disaster-response training under the Cyclone Preparedness Programme (CPP).</li>
+        <li>Trained around 300 CPP volunteers across about seven batches, in separate sessions.</li>
+        <li>CPP volunteers work in disasters, so the training focused on first aid for emergency response.</li>
+      </ul>
+      <span class="pill">Disaster preparedness</span><span class="pill">First aid</span><span class="pill">CPP</span>
+    </div>
+  </details>
+
+  <details class="exp">
+    <summary><div class="t"><strong>Session Speaker, DISHA Project</strong><small>Village school and madrasa students</small></div></summary>
+    <div class="body">
+      <ul>
+        <li>Conduct regular sessions on time management, emotional control and ways to do better in studies for a group of about 30 students.</li>
+      </ul>
+      <span class="pill">Public speaking</span><span class="pill">Mentoring</span>
+    </div>
+  </details>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="edu"><div class="row"><strong>Bachelor of Laws (LLB, Honours)</strong><span class="d">2025 &ndash; Present</span></div><p>Port City International University, Chattogram</p></div>
+  <div class="edu"><div class="row"><strong>Higher Secondary Certificate (HSC), Business Studies</strong><span class="d">2024</span></div><p>Govt. Ashekane Awlia Degree College, Chattogram &middot; Chittagong Board</p></div>
+  <div class="edu"><div class="row"><strong>Secondary School Certificate (SSC), Business Studies</strong><span class="d">2022</span></div><p>Pekua Model Govt. G.M.C. Institution &middot; Chittagong Board</p></div>
+</section>
+
+<section id="training">
+  <h2>Training &amp; Certification</h2>
+  <ul class="plain">
+    <li><strong>Epidemic Control for Volunteers</strong>, Population Movement Operation (PMO), Bangladesh Red Crescent Society, supported by IFRC, Cox's Bazar, 20&ndash;21 December 2023</li>
+    <li>First Aid &middot; Leadership &middot; Climate Science &middot; Human Rights</li>
+  </ul>
+</section>
+
+<section id="skills">
+  <h2>Skills &amp; Languages</h2>
+  <div class="skill"><b>Leadership &amp; Communication:</b> Team leadership, flood and emergency response coordination, public speaking and training facilitation, community outreach, reporting and documentation, data collection.</div>
+  <div class="skill"><b>Digital:</b> MS Word, MS Excel, internet research, digital media and content support.</div>
+  <div class="skill"><b>Languages:</b> Bengali (native); English (listening, reading, writing and speaking); local dialect (fluent, listening and speaking).</div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <p>Open to internships, volunteering and learning opportunities in humanitarian and public-interest law.</p>
+  <a class="btn" href="mailto:mohammadjahedulislamrakib@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg>Email</a>
+  <a class="btn" href="https://linkedin.com/in/mohammadjahedulislamrakib" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.78 2.66 4.78 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z"/></svg>LinkedIn</a>
+</section>
+
+</main>
+
+<footer>&copy; 2026 Mohammad Jahedul Islam Rakib &middot; Cox's Bazar, Bangladesh</footer>
+
+</body>
+</html>
