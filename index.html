@@ -25,6 +25,9 @@ body{font-family:'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:var(--text);
 .icons a{width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.1);border:1px solid rgba(230,201,122,.6);display:flex;align-items:center;justify-content:center;transition:.2s;}
 .icons a:hover{background:var(--gold);transform:translateY(-3px);}
 .icons svg{width:21px;height:21px;fill:#fff;}
+.icons a.cvpill{width:auto;padding:0 18px;gap:8px;border-radius:23px;background:var(--gold);border-color:var(--gold);color:var(--navy);text-decoration:none;font-size:.88rem;font-weight:700;order:3;}
+.icons a.cvpill svg{width:18px;height:18px;fill:var(--navy);}
+.icons a.cvpill:hover{background:var(--gold2);}
 
 nav{background:#fff;position:sticky;top:0;z-index:20;display:flex;flex-wrap:wrap;justify-content:center;gap:4px 22px;padding:12px 10px;box-shadow:0 2px 10px rgba(15,33,68,.08);}
 nav a{color:var(--navy);text-decoration:none;font-size:.9rem;font-weight:600;padding:4px 2px;border-bottom:2px solid transparent;}
@@ -84,12 +87,13 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:22px;border
   <div class="hero-in">
     <div class="photo"><img src="photo.png" alt="Mohammad Jahedul Islam Rakib"></div>
     <div class="who">
-      <p class="eyebrow">Law Student &middot; Volunteer &middot; Enthusiast</p>
+      <p class="eyebrow">Law Student &middot; Red Crescent Volunteer</p>
       <h1>Mohammad Jahedul Islam Rakib</h1>
       <div class="line"></div>
       <p class="role">Building a path in humanitarian, climate-related and public-interest legal work.</p>
       <p class="loc">Cox's Bazar, Bangladesh</p>
       <div class="icons">
+        <a class="cvpill" href="Rakib_CV.pdf" download="Rakib_CV.pdf" aria-label="Download CV" title="Download CV"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>Download CV</a>
         <a href="mailto:mohammadjahedulislamrakib@gmail.com" aria-label="Email" title="Email">
           <svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg>
         </a>
@@ -104,6 +108,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:22px;border
 <nav>
   <a href="#about">About</a>
   <a href="#experience">Experience</a>
+  <a href="#disha">DISHA</a>
   <a href="#education">Education</a>
   <a href="#training">Training</a>
   <a href="#skills">Skills</a>
@@ -267,6 +272,7 @@ footer{text-align:center;color:var(--muted);font-size:.85rem;padding:22px;border
   <p>Open to internships, volunteering and learning opportunities in humanitarian and public-interest law.</p>
   <a class="btn" href="mailto:mohammadjahedulislamrakib@gmail.com"><svg viewBox="0 0 24 24"><path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 4.2-8 5-8-5V6l8 5 8-5z"/></svg>Email</a>
   <a class="btn" href="https://linkedin.com/in/mohammadjahedulislamrakib" target="_blank" rel="noopener"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.84-2.05 3.78-2.05 4.04 0 4.78 2.66 4.78 6.1V21h-4v-5.2c0-1.24-.02-2.84-1.73-2.84-1.73 0-2 1.35-2 2.75V21h-4z"/></svg>LinkedIn</a>
+  <a class="btn" href="Rakib_CV.pdf" download="Rakib_CV.pdf"><svg viewBox="0 0 24 24"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>Download CV</a>
 </section>
 
 </main>
